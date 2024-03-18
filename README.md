@@ -21,7 +21,7 @@ Tämä web-sovellus hakee ja näyttää viisi lähintä ruokapaikkaa käyttäjä
 
 ## Asennus
 
-Tämä projekti ei vaadi erillistä asennusta. Avaa vain `index.html` tiedosto selaimessasi.
+Lisää API-avain ./js/functions tiedostoon ja avaa `index.html` tiedosto selaimessasi. 
 
 ## Teknologiat
 
