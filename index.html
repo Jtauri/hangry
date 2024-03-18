@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Nälistäjä</title>
+</head>
+
+<div id="container">
+    <header>
+        <h1>Ruokapaikat lähelläsi</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Etusivu</a></li>
+            <li><a href="./assignment.html">Tehtävänanto</a></li>
+            <li><a href="./about.html">About</a></li>
+        </ul>
+    </nav>
+    <div id="content">
+        <section id="searchParameters">
+            <div>
+                <form id="searchForm">
+                    <div>
+                        Sijaintisi: <span id="lat"></span><span id="lon"></span>
+                        <label>Etsintäetäisyys (metreinä):</label>
+                        <input type="number" value="1000">
+                        <button type="submit" id="searchButton">Etsi</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section id="main">
+            <article>
+                <div id="listOfRestaurants">
+                    <h3>Lähelläsi olevia ruokapaikkoja</h3>
+                    <table id="restaurants"></table>
+                </div>
+            </article>
+            <article>
+                <div id="listOfSavedRestaurants">
+                    <h3>Tallennetut ruokapaikat</h3>
+                    <table id="savedRestaurants"></table>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer>
+        <p>Jarno Tauriainen 2024</p>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/functions.js"></script>
+</body>
+
+</html>
